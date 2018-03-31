@@ -51,6 +51,11 @@ No dia seguinte ao anuncio da invasão, a empresa anunciou que disponibilizou se
 Porém, momentos após o serviço ser liberado, diversos veículos de noticias anunciaram que os termos de serviço do \textit{TrustedID Premier} incluiam uma clausula que forçava o consumidor que se cadastra-se
 no serviço a não participar de ações conjuntas contra a Equifax na justiça. Logo após a invasão, já existiam processos relacionados a brecha de segurança \cite{Mosendz2017} \cite{Robertson2017} \cite{Grant2017}.
 
+\section{Vulnerabilidade}
+O sistema da Equifax foi invadido através de uma vulnerabilidade no \textit{framework} Apache Struts 2, utilizado para o desenvolvimento de aplicações web em larga escala na linguagem Java. A vulnerabilidade explorada
+foi a CVE-2017-5638, que permite um invasor enviar uma requisição para o envio de um arquivo modificada para um servidor vulnerável. O invasor pode enviar então, código malicioso no \textit{header} Content-Type para
+executar comandos no servidor infectado. A falha no código do Apache Struts 2 foi divulgada em março de 2017, com potenciais explorações em sistemas em produção, sendo considerada uma falha critica.  \cite{Luszcz2018} \cite{Sahu2017}.
+
 \bibliographystyle{IEEEtran}
 \bibliography{bibliografia}
 
