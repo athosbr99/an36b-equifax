@@ -48,10 +48,6 @@ No dia sete de setembro de 2017, a Equifax anunciou que 143 milhões de pessoas 
 não identificados. De acordo com a investigação interna da empresa, os acessos dos invasores ocorreram entre o meio de maio até julho de 2017, sendo a invasão identificada e remediada 
 em 29 de julho de 2017. No momento do anuncio, era conhecido que a invasão aconteceu através de uma vulnerabilidade em um website da empresa. \cite{Carman2017} \cite{Equifax2017} \cite{Bernard2017} \cite{Moore2017}.
 
-No dia seguinte ao anuncio da invasão, a empresa anunciou que disponibilizou seu serviço de proteção a crédito \textit{TrustedID Premier} gratuitamente quem desejar verificar se foi impactado pela invasão. 
-Porém, momentos após o serviço ser liberado, diversos veículos de noticias anunciaram que os termos de serviço do \textit{TrustedID Premier} incluiam uma clausula que forçava o consumidor que se cadastra-se
-no serviço a não participar de ações conjuntas contra a Equifax na justiça. Logo após a invasão, já existiam processos relacionados a brecha de segurança \cite{Mosendz2017} \cite{Robertson2017} \cite{Grant2017}.
-
 No dia 18 de março de 2018, o ex-executivo da Equifax Jun Ying foi processado pela \textit{Securitites and Exchange Commission} dos Estados Unidos por \textit{insider trading}, que é o uso de informações confidenciais
 para ganho próprio no mercado de ações. Dez dias antes da divulgação da invasão, Ying vendeu todas as suas ações da Equifax, evitando uma perda de mais de 117 mil dólares. 
 
@@ -64,7 +60,17 @@ A falha no código do Apache Struts 2 foi divulgada em março de 2017, com poten
 sistemas da Equifax ficaram sem a atualização com a correção da CVE-2017-5638 até julho, o que permitiu o acesso aos invasores. Tal fato foi comentado e criticado na imprensa, 
 sendo uma negligencia grosseira de segurança por parte da Equifax. O acontecimento também foi comentado pela equipe da Apache Struts, que lamentou o caso e afirmou que 
 atualizações de segurança não devem ser negligenciadas e é responsabilidade dos administradores manter seus sistemas atualizados e seguros \cite{Newman2017} \cite{Goodin2017} 
-\cite{Struts2017-1} \cite{Struts2017-2}.
+\cite{Dignan2017} \cite{Struts2017-1} \cite{Struts2017-2}.
+
+\section{Falhas após a invasão}
+No dia seguinte ao anuncio da invasão, a empresa anunciou que disponibilizou seu serviço de proteção a crédito \textit{TrustedID Premier} gratuitamente quem desejar verificar se foi impactado pela invasão. 
+Porém, momentos após o serviço ser liberado, diversos veículos de noticias anunciaram que os termos de serviço do \textit{TrustedID Premier} incluiam uma clausula que forçava o consumidor que se cadastra-se
+no serviço a não participar de ações conjuntas contra a Equifax na justiça. Logo após a invasão, já existiam processos relacionados a brecha de segurança \cite{Mosendz2017} \cite{Robertson2017} \cite{Grant2017}.
+
+Um dos websites da Equifax para utilizar o serviço de monitoramento de crédito possuia, pelo menos, uma vunerabilidade de \textit{cross-site scripting}, também conhecido como ataque XSS. Através deste ataque, um
+usuário malicioso poderia modificar a URL da Equifax de maneira que os dados submetidos na página fossem enviados ao usuário malicioso \cite{Whittaker2017}.
+
+
 
 \bibliographystyle{IEEEtran}
 \bibliography{bibliografia}
