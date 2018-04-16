@@ -23,7 +23,7 @@
 
 \begin{abstract}
 No final de 2017, foi descoberta uma invasão nos sistemas da Equifax, uma bureau de crédito dos Estados Unidos e uma das maiores do ramo. A invasão impactou diretamente milhares de residentes nos
-Estados Unidos, além de outros países. Pouco se conhece sobre os invasores e o que fizeram com os dados roubados. A gravidade da invasão, a maneira como os invasões obtiveram acesso e os erros da Equifax
+Estados Unidos, além de outros países como Canadá e Reino Unido. Pouco se conhece sobre os invasores e o que fizeram com os dados roubados. A gravidade da invasão, a maneira como os invasões obtiveram acesso e os erros da Equifax
 após o anuncio da invasão fizeram deste acontecimento um dos maiores da história da segurança da informação.
 \end{abstract}
 
@@ -35,13 +35,13 @@ equifax, invasão, segurança, informações, privacidade
 Quando uma pessoa vai abrir uma conta em um banco, obter um cartão de crédito, fazer um empréstimo ou financiamento e diversas outras operações comuns, as informações da pessoa são conferidas através de um
 intermediário, geralmente chamado bureau de crédito. Esse intermediário é responsável por armazenar e verificar dados e informar se a pessoa possui crédito suficiente para a operação desejada, inadimplência com pagamentos, dentre outras informações.
 É implícito então, que tais bureais de crédito possuem uma vasta gama de informações de todas as pessoas dentro de um pais que guardam seu dinheiro em um banco.
-A Equifax Inc. é uma dessas empresas. Porém, o cuidado com a segurança dessas informações não é o que se espera de empresas deste porte.
+A Equifax Inc. é uma dessas empresas. Porém, a qualidade da segurança da informação destas empresas, tal como a Equifax, as vezes é aquém do esperado pelos consumidores.
 Esse artigo é organizado da seguinte maneira: A seção ``A empresa'' dá uma breve descrição sobre a Equifax. A seção ``Descoberta da Invasão'' explica o acontecido. 
 A seção ``Vulnerabilidade'' dá detalhes de como os invasores exploraram o sistema. A seção ``Falha Após a Invasão'' mostra diversos procedimentos inadequados da empresa após a invasão.
 
 \section{A empresa}
 A Equifax Inc. é uma bureau de crédito criada em 1899 com o nome de \textit{Retail Credit Company} que atua mundialmente e possui sede em Atlanta, Georgia, nos Estados Unidos. 
-É uma das três maiores agencias de crédito do mundo, junto com a Experian -- que atua no Brasil com a marca Serasa Experian,
+É uma das três maiores agências de crédito do mundo, junto com a Experian -- que atua no Brasil com a marca Serasa Experian,
 ou somente Serasa -- e a TransUnion \cite{Roos2008}.
 
 Além de oferecer informações relacionadas a crédito de consumidores e dados demográficos para empresas e bancos, a Equifax
@@ -54,7 +54,7 @@ como SPC \cite{BoaVista2018} \cite{Sandrini2011}.
 \section{Descoberta da invasão} 
 No dia sete de setembro de 2017, a Equifax anunciou que 143 milhões de pessoas residentes nos Estados Unidos da América tiveram suas informações pessoais comprometidas por invasores 
 não identificados. De acordo com a investigação interna da empresa, os acessos dos invasores ocorreram entre o meio de maio até julho de 2017, sendo a invasão identificada e remediada 
-em 29 de julho de 2017. No momento do anuncio, era conhecido que a invasão aconteceu através de uma vulnerabilidade em um website da empresa. \cite{Carman2017} \cite{Equifax2017} \cite{Bernard2017} \cite{Moore2017}.
+em 29 de julho de 2017. No momento do aníncio, era conhecido que a invasão aconteceu através de uma vulnerabilidade em um website da empresa. \cite{Carman2017} \cite{Equifax2017} \cite{Bernard2017} \cite{Moore2017}.
 
 Em outubro de 2017, a Equifax anunciou que a invasão impactou aproximadamente 700 mil pessoas no Reino Unido \cite{Pritchard2017}. 
 
@@ -68,16 +68,15 @@ O sistema da Equifax foi invadido através de uma vulnerabilidade no \textit{fra
 foi a CVE-2017-5638, que permite um invasor enviar uma requisição para o envio de um arquivo modificada para um servidor vulnerável. O invasor pode enviar então, código malicioso no \textit{header} Content-Type para
 executar comandos no servidor infectado \cite{Luszcz2018} \cite{Sahu2017}.
 
-A falha no código do Apache Struts 2 foi divulgada em março de 2017, com potenciais explorações em sistemas em produção, sendo considerada uma falha critica. Desta maneira, os 
+A falha no código do Apache Struts 2 foi divulgada em março de 2017, com potenciais explorações em sistemas em produção, sendo considerada uma falha critíca. Desta maneira, os 
 sistemas da Equifax ficaram sem a atualização com a correção da CVE-2017-5638 até julho, o que permitiu o acesso aos invasores. Tal fato foi comentado e criticado na imprensa, 
 sendo uma negligencia grosseira de segurança por parte da Equifax. O acontecimento também foi comentado pela equipe da Apache Struts, que lamentou o caso e afirmou que 
 atualizações de segurança não devem ser negligenciadas e é responsabilidade dos administradores manter seus sistemas atualizados e seguros \cite{Newman2017} \cite{Goodin2017} 
 \cite{Dignan2017} \cite{Struts20171} \cite{Struts20172}.
 
 \section{Falhas após a invasão}
-No dia seguinte ao anuncio da invasão, a empresa anunciou que disponibilizou seu serviço de proteção a crédito \textit{TrustedID Premier} gratuitamente para quem desejar verificar se foi impactado pela invasão. 
-	Porém, momentos após o serviço ser liberado, diversos veículos de noticias anunciaram que os termos de serviço do \textit{TrustedID Premier} incluíam uma clausula que forçava o consumidor que se cadastra-se
-no serviço a não participar de ações conjuntas contra a Equifax na justiça. Logo após a invasão, já existiam processos relacionados a brecha de segurança \cite{Mosendz2017} \cite{Robertson2017} \cite{Grant2017}.
+No dia seguinte ao anúncio da invasão, a empresa anunciou que disponibilizou seu serviço de proteção a crédito \textit{TrustedID Premier} gratuitamente para quem desejar verificar se foi impactado pela invasão. 
+	Porém, momentos após o serviço ser liberado, diversos veículos de notícias anunciaram que os termos de serviço do \textit{TrustedID Premier} incluíam uma cláusula que forçava o consumidor que fizessem o cadastro no serviço a não participar de ações conjuntas contra a Equifax na justiça. Logo após a invasão, já existiam processos relacionados a brecha de segurança \cite{Mosendz2017} \cite{Robertson2017} \cite{Grant2017}.
 
 A Equifax criou um website para facilitar que os usuários a se cadastrarem no \textit{TrustedID Premier}. A URL do website é \url{https://www.equifaxsecurity2017.com}. Diversos usuários, jornalistas e profissionais 
 questionaram a escolha do domínio registrado, que é fácil de ser confundido, é semelhante a domínios utilizados para \textit{phishing} e não tem relação direta com o domínio da empresa, \url{https://www.equifax.com}.
